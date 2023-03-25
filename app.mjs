@@ -36,6 +36,8 @@ const getRows = async () => {
 }
 
 const addRow = async (rows) => {
+    // await sheet.addRows(rows) // append rows
+
 
     for (let index = 0; index < rows.length; index++) {
         const row = rows[index];
@@ -46,7 +48,9 @@ const addRow = async (rows) => {
 }
 
 // addRow([
-//     { name: 'sadaf', roll: 102 },
+//     { name: 'ammar', roll: 102 },
+//     { name: 'shoaib', roll: 102 },
+//     { name: 'umar', roll: 102 },
 // ])
 
 const updateRow = async (key, oldValue, newValue) => {
@@ -81,3 +85,6 @@ const deleteRow = async (key, val) => {
 }
 
 // deleteRow('name', 'ammar')
+
+//https://theoephraim.github.io/node-google-spreadsheet/#/
+//https://www.npmjs.com/package/google-spreadsheet
